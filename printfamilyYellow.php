@@ -55,47 +55,6 @@ session_start();
   <title></title>
 </head>
 <body>
-  <nav id="sidebar">
-      <div style="width: 100px;">
-        <div class="sidebar-header">
-            <h3>Temple System</h3>
-        </div>
-        <ul class="list-unstyled components">
-            <li class="active">
-                <a href="home.php" data-toggle="collapse" aria-expanded="false" >首页 Home</a>
-            </li>
-            <li>
-                <a href="admin.php">员工 Admin</a>
-            </li>
-            <li>
-                <a href="supplier.php">供应商 Supplier</a>
-            </li>
-            <li>
-                <a href="Stock.php">库存 Stock</a>
-            </li>
-            <li>
-                <a href="taisui.php">太岁 Taisui</a>
-            </li>
-            <li>
-                <a href="godlist.php">神 God list</a>
-            </li>
-             <li>
-                <a href="chooseMatch.php">相配 Match</a>
-            </li>
-            <li>
-                <a href="order.php">订货 Order</a>   
-            </li>
-            <li>
-                <a href="#.php">死亡记录 Death Record</a>
-            </li>
-            <li>
-                <a href="logoutAdmin.php">登出 Logout</a>
-            </li>
-            
-        </ul>
-         
-     </div> 
-  </nav>
 
       <?php
       $cname = $_SESSION['mem_cname'];

@@ -73,9 +73,6 @@ if(!isset($_SESSION['admin'])){
                 <a href="order.php">订货 Order</a>   
             </li>
             <li>
-                <a href="#.php">死亡记录 Death Record</a>
-            </li>
-            <li>
                 <a href="logoutAdmin.php">登出 Logout</a>
             </li>
             

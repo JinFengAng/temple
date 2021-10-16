@@ -134,7 +134,7 @@ session_start();
             while($rows = $result->fetch_assoc()){ 
       ?>
       <form action="printfamilyPink2.php" method="POST">
-        <div style="float: left; padding-left:300px;">
+        <div style="float: left;">
           <div style="width: 98%;margin: 10px;">
           <label><?php echo $rows['family_cname']?></label>
           <input type="hidden" name="family_id[]" value="<?php echo $rows['family_id']?>"><br>

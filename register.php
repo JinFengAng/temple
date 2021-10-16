@@ -184,10 +184,11 @@
                                 </div>
                             </div>
                         </div>
+
                         <h4>if you don't know your chinese birthday ,month and year,please click on the website to view</h4>
-			
-									<h4>如果您不知道您的农历生日，月份和年份，麻烦您按一下的网站查看</h4>
+						<h4>如果您不知道您的农历生日，月份和年份，麻烦您按一下的网站查看</h4>
 						<a href="https://gonglinongli.51240.com/" target="_blank">check your chinese birthday</a>
+                        
 							<br>
 							<br>
                           <div class="row row-space">

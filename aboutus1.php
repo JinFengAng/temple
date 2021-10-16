@@ -12,9 +12,9 @@ include('config.php');
 	<head>
 		<meta charset="utf-8" />
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style type="text/css">
 			p{
@@ -34,11 +34,9 @@ include('config.php');
 			      <li><a href="homemember.php">Home 首页</a></li>
 			      <li><a href="aboutus.php">About Us&History本宫简介&历史 </a></li>
 			      <li><a href="godhistory.php">God History神明典故 </a></li>         
-			     
 			      <li><a href="contactus.php">Contact Us 联系我们</a></li> 
-			      
-			      <li><a href="member_account.php"><input type="submit" name="" value="Member Account 会员账号"></a></li>
-			      <li style="padding-right:100px; "><a href="logout.php">Logout登出</a></li> 
+			      <li><a href="member_account.php">Member Account 会员账号></a></li>
+			      <li><a href="logout.php" style="text-align: right">Logout登出</a></li> 
 			      
 			    </ul>
 			  </div>

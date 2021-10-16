@@ -2,9 +2,9 @@
 require('config.php');
 session_start();
 
- if(!isset($_SESSION['admin'])){
-  header("Location:loginAdmin.php");
-}
+//  if(!isset($_SESSION['admin'])){
+//   header("Location:loginAdmin.php");
+// }
 ?>
 
 
@@ -26,14 +26,19 @@ session_start();
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
 	<style type="text/css"> 
+   @media print{
+      div{page-break-after:auto;}
+    }
     @page{
         size: 150mm 940mm landscape;
     }
 		.vertical-orientation{
   			writing-mode: vertical-rl;
   			text-orientation: upright;
-        border-style: solid;
-        font-size: 21px;
+        padding-right:60px;
+        width:200px;
+        margin-right: 10px;
+        font-size: 20px;
 		}
    
     .wrapper {
@@ -42,7 +47,7 @@ session_start();
     }
 
     #sidebar {
-        width: 250px;
+        width: 300px;
         position: fixed;
         top: 0;
         left: 0;
@@ -59,10 +64,11 @@ session_start();
 	<title></title>
 </head>
 <body>
-    <div style="float: left;border-style: solid; padding-right: 5px; ">
+ <div>
+    <div style="float: left;border-style: solid; ">
       <h2 style="text-align: center; color:red;"><b><u>柔佛</u></b></h2><br>
-        <h2 style="text-align: center; color:red;"><b><u>士姑来天后宫</u></b></h2><br>
-      <div class="vertical-orientation" style="margin-left:10%">
+        <h2 style="text-align: center;color:red; "><b><u>士姑来天后宫</u></b></h2><br>
+      <div class="vertical-orientation" >
          <?php
           // echo  $_SESSION['mem_cname'];
                 $cname = $_SESSION['mem_cname'];
@@ -73,34 +79,31 @@ session_start();
                         $rows = $result->fetch_assoc();
                       
             ?>
-        <label style="color:red">弟子
-        <br>信女</label>
-        <label>
-          <?php echo $rows['mem_cname']; ?>
-        </label>
-        <label style="color:red">自命
-                  <?php echo $rows['mem_cbirthyear']; ?>年
-                  <?php echo $rows['mem_cbirthmonth']; ?>月
-                  <?php echo $rows['mem_cbirth']; ?>日
-               <br>
+        <label style="color: red;">弟子
+        <br>信女</label><?php echo $rows['mem_cname']; ?><label style="color: red;">自命</label>
+                  
+                  <?php echo $rows['mem_cbirthyear']; ?><label style="color: red;">年</label>
+                  <?php echo $rows['mem_cbirthmonth']; ?>
+                  <!-- <label style="color: red;">月</label> -->
+                  <?php echo $rows['mem_cbirth']; ?><label style="color: red;">日</label>
           <?php
             }
            ?>
-        <label style="color:red">祈求</label><br>
-        <label><?php echo $rows['taisui_name']?></label>
-<!--         <label>太岁盧秘星君保平安</label> -->
-        <label style="color:red">
-          <span id="todayYear"></span>年
-          <label><?php echo $rows['taisui_Month']?></label>
-          <label><?php echo $rows['taisui_Date']?></label>
-          <!-- <span id="todayMonth"></span>月
-          <span id="todayDay"></span>日 -->
+           <br>
+        <label style="color: red;">祈求</label><br>
+        <label id="year-output" style="color: red;"><input type="text" name="year" id="year"></label>
+        <!-- <label>太岁盧秘星君保平安</label> -->
+        <br>
+        <label style="color: red;">
+          <span id="todayYear"></span>年  <span id="todayMonth"></span>月  <span id="todayDay"></span>日
         </label>
       </div>
+      <br>
   </div>
   <div style="float:left; border: 1px solid;">
     <button onclick="window.print()">Print Out 打印粉红单</button>
   </div>
+</div>
 </body>
 </html>
 
@@ -142,6 +145,12 @@ session_start();
         });
     }
     gettodaydate();
+    $(function () {
+        $('#year').change(function () {
+            let output = $(this).val();
+            $('#year-output').text(output);
+        });
+    });
 
     </script>
 

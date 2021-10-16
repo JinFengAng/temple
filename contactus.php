@@ -11,15 +11,16 @@ include('config.php');
 <html>
 <head>
   <title>Temple system</title>
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
    <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKjsz8HDY_TmMsZpdUzbWVc7kDr6EjcdU&callback=initMap">
-</script>
-  <style>
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKjsz8HDY_TmMsZpdUzbWVc7kDr6EjcdU&callback=initMap">
+   </script>
+   <style>
        #map {
         height: 400px;
         width: 100%;
@@ -41,7 +42,7 @@ include('config.php');
         <li><a href="contactus.php">Contact Us 联系我们</a></li> 
         
         <li><a href="member_account.php">Member Account 会员账号</a></li>
-        <li style="padding-right:203px;"><a href="logout.php">Logout登出</a></li> 
+        <li><a href="logout.php" style="text-align: right">Logout登出</a></li> 
         
       </ul>
     </div>

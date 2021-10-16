@@ -42,7 +42,10 @@ function filterTable($query){
 <html>
 <head>
 	<meta charset="UTF-8">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	
 	<!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
@@ -55,7 +58,6 @@ function filterTable($query){
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="assets/css/main.css" />
 <style>
@@ -105,7 +107,7 @@ function filterTable($query){
           <li><a href="contactus.php">Contact Us 联系我们</a></li> 
           
           <li><a href="member_account.php">Member Account 会员账号</a></li>
-          <li style="padding-left:230px; "><a href="logout.php" style="text-align: right">Logout 登出</a></li> 
+          <li><a href="logout.php" style="text-align: right">Logout 登出</a></li> 
           
         </ul>
       </div>

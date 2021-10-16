@@ -122,6 +122,7 @@ if(!isset($_SESSION['admin'])){
                         </select>
 
                         <legend style="background-color: #3CBC8D;padding: 10px;border: 1px solid black">Member Details</legend>
+                        <br>
                         <label for="name">名字 Member Name：</label>
                         <input type="text" id="name" name="name" placeholder=" "  value=""required>
                         <br>

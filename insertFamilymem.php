@@ -37,22 +37,22 @@ if(isset($_POST['submit'])){
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
-   <style type="text/css">
-  		label {
-			color: black;
-		}
-		h2{
-			color: black;
-		}
-		input{
-			text-align: center;
-		}
+	<style type="text/css">
+			label {
+				color: black;
+			}
+			h2{
+				color: black;
+			}
+			input{
+				text-align: center;
+			}
 
-   </style>
+	</style>
 </head>
 <body>
 	 <!-- navigation section -->
@@ -69,7 +69,7 @@ if(isset($_POST['submit'])){
 		      <li><a href="contactus.php">Contact Us 联系我们</a></li> 
 		      
 		      <li><a href="member_account.php">Member Account 会员账号</a></li>
-		      <li style="padding-left:230px; "><a href="logout.php">Logout登出</a></li> 
+		      <li><a href="logout.php"  style="text-align: right">Logout登出</a></li> 
 		      
 		    </ul>
 		  </div>
@@ -119,14 +119,13 @@ if(isset($_POST['submit'])){
 						</table>
 
 
-						<table style="">
+						<table>
 							
-					
-							<!-- <h4 style="color: black">if you don't know your chinese birthday ,month and year,please click on the website to view</h4>
+							<h4 style="color: black">if you don't know your chinese birthday ,month and year,please click on the website to view</h4>
 		
 								<h4 style="color: black">如果您不知道您的农历生日，月份和年份，麻烦您按一下的网站查看</h4>
 								<br>
-								<a href="https://gonglinongli.51240.com/" target="_blank">check your chinese birthday</a> -->
+								<a href="https://gonglinongli.51240.com/" target="_blank">check your chinese birthday</a>
 							
 						<tr>
 							<td><label for="cbirthyear">农历生日（年份）Chinese Birthday year:</label></td>
@@ -156,8 +155,8 @@ if(isset($_POST['submit'])){
 							<td><input type="text" name="cbirth" placeholder="birthday Chinese" required></td>
 						</tr>
 						<tr>
-						<td><label for="married">婚姻情况 Married:</label>	</td>
-							<td><input type="radio" id="married" name="married" value="1" group></td>
+						<label for="marry">婚姻情况 Married:</label>	
+							<input type="radio" id="married" name="married" value="1">
   							<label for="married" style="color: black;">已婚</label>
   							<input type="radio" id="unmarried" name="married" value="0">
   							<label for="unmarried" style="color: black;">单身</label>
